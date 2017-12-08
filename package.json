@@ -1,0 +1,33 @@
+{
+  "name": "iamas2018-web-teaser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nasustim/iamas2018-web-teaser.git"
+  },
+  "author": "Mitsuhiro HIBINO",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nasustim/iamas2018-web-teaser/issues"
+  },
+  "homepage": "https://github.com/nasustim/iamas2018-web-teaser#readme",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "fs": "0.0.1-security",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.0",
+    "gulp-haml": "^0.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-webserver": "^0.9.1",
+    "haml": "^0.4.3"
+  }
+}
