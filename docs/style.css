@@ -12,33 +12,29 @@ html, body, #container {
   flex-direction: column;
   align-items: center; }
 
-header {
-  height: 100%; }
-  header #title-block {
-    height: 100%; }
-    header #title-block #title-str {
-      font-size: 4vw; }
+header #title-block {
+  text-align: center; }
+  header #title-block #title-str {
+    font-size: 4vw; }
 
-.content-block {
-  height: 100%; }
-  .content-block .content-title {
-    text-align: center; }
-    .content-block .content-title .eng {
-      color: blue;
-      font-style: italic;
-      font-weight: bold;
-      font-size: 3vw; }
-    .content-block .content-title .jpn {
-      font-size: 1.6vw; }
+.content-block .content-title {
+  text-align: center; }
+  .content-block .content-title .eng {
+    color: blue;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 3vw; }
+  .content-block .content-title .jpn {
+    font-size: 1.6vw; }
 
 @media screen and (max-width: 1079px) {
-  #title-block {
+  header {
     width: 98%; }
   .content-block {
     width: 98%; } }
 
 @media screen and (min-width: 1080px) {
-  #title-block {
+  header {
     width: 80%; }
   .content-block {
     width: 80%; } }
