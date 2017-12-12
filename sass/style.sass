@@ -4,5 +4,52 @@ html, body, #container
   margin: 0
   padding: 0
 
+header, article
+
 .title-datetime-90deg
   display: inline-block
+
+#container
+  display: flex
+  flex-direction: column
+  align-items: center
+
+
+#title-block
+
+  height: 100%
+
+  #title-str
+    font-size: 4vw
+
+  #title-detail
+
+
+.content-block
+
+  height: 100%
+
+  .content-title
+
+    text-align: center
+
+    .eng
+      color: blue
+      font-style: italic
+      font-weight: bold
+      font-size: 3vw
+    .jpn
+      font-size: 1.6vw
+  .content-in
+
+
+@media screen and (max-width: 1079px)
+  #title-block
+    width: 98%
+  .content-block
+    width: 98%
+@media screen and (min-width: 1080px)
+  #title-block
+    width: 80%
+  .content-block
+    width: 80%
