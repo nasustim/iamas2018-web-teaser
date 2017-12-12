@@ -4,10 +4,6 @@ html, body, #container
   margin: 0
   padding: 0
 
-header, article
-
-.d270, .datetime-detail
-  display: inline
 
 #container
   display: flex
@@ -21,14 +17,9 @@ header
 
 
   #title-block
-    //text-align: justify
-    //text-justify: inter-ideograph
     text-align: center
-
-    #title-str
-      font-size: 4vw
-
-    #title-detail
+    img
+      width: 100%
 
 
 .content-block
@@ -41,34 +32,74 @@ header
       color: blue
       font-style: italic
       font-weight: bold
-      font-size: 3vw
     .jpn
-      font-size: 1.2vw
   .content-in
-    .stardard
-      font-size: 1.4vw
+    .stardand
     .bold
       font-weight: bold
-      font-size: 1.4vw
 
 .names
   display: flex
   .works-list
     font-weight: bold
-    font-size: 1.5vw
     width: 30%
     text-align: center
   .works-name
-    font-size: 1.3vw
     width: 70%
+    display: flex
+    .row
+      display: flex
+
 
 @media screen and (max-width: 1079px)
   header
-    width: 98%
+    width: 95%
+    #title-str
+      font-size: 9vw
   .content-block
-    width: 98%
+    width: 95%
+    .content-title
+      .eng
+        font-size: 6vw
+      .jpn
+        font-size: 2.4vw
+    .content-in
+      .standard
+        font-size: 3.8vw
+      .bold
+        font-size: 3.8vw
+  .names
+    flex-direction: column
+    .works-list
+      font-size: 3.8vw
+    .works-name
+      flex-direction: row
+      font-size: 3.8vw
+      .row
+        flex-direction: column
 @media screen and (min-width: 1080px)
   header
-    width: 70%
+    width: 65%
+    #title-str
+      font-size: 4vw
   .content-block
-    width: 70%
+    width: 65%
+    .content-title
+      .eng
+        font-size: 3vw
+      .jpn
+        font-size: 1.2vw
+    .content-in
+      .standard
+        font-size: 1.4vw
+      .bold
+        font-size: 1.4vw
+  .names
+    flex-direction: row
+    .works-list
+      font-size: 1.5vw
+    .works-name
+      flex-direction: row
+      font-size: 1.3vw
+      .row
+        flex-direction: row

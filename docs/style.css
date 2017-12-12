@@ -4,9 +4,6 @@ html, body, #container {
   margin: 0;
   padding: 0; }
 
-.d270, .datetime-detail {
-  display: inline; }
-
 #container {
   display: flex;
   flex-direction: column;
@@ -17,45 +14,77 @@ html, body, #container {
 
 header #title-block {
   text-align: center; }
-  header #title-block #title-str {
-    font-size: 4vw; }
+  header #title-block img {
+    width: 100%; }
 
 .content-block .content-title {
   text-align: center; }
   .content-block .content-title .eng {
     color: blue;
     font-style: italic;
-    font-weight: bold;
-    font-size: 3vw; }
-  .content-block .content-title .jpn {
-    font-size: 1.2vw; }
-
-.content-block .content-in .stardard {
-  font-size: 1.4vw; }
+    font-weight: bold; }
 
 .content-block .content-in .bold {
-  font-weight: bold;
-  font-size: 1.4vw; }
+  font-weight: bold; }
 
 .names {
   display: flex; }
   .names .works-list {
     font-weight: bold;
-    font-size: 1.5vw;
     width: 30%;
     text-align: center; }
   .names .works-name {
-    font-size: 1.3vw;
-    width: 70%; }
+    width: 70%;
+    display: flex; }
+    .names .works-name .row {
+      display: flex; }
 
 @media screen and (max-width: 1079px) {
   header {
-    width: 98%; }
+    width: 95%; }
+    header #title-str {
+      font-size: 9vw; }
   .content-block {
-    width: 98%; } }
+    width: 95%; }
+    .content-block .content-title .eng {
+      font-size: 6vw; }
+    .content-block .content-title .jpn {
+      font-size: 2.4vw; }
+    .content-block .content-in .standard {
+      font-size: 3.8vw; }
+    .content-block .content-in .bold {
+      font-size: 3.8vw; }
+  .names {
+    flex-direction: column; }
+    .names .works-list {
+      font-size: 3.8vw; }
+    .names .works-name {
+      flex-direction: row;
+      font-size: 3.8vw; }
+      .names .works-name .row {
+        flex-direction: column; } }
 
 @media screen and (min-width: 1080px) {
   header {
-    width: 70%; }
+    width: 65%; }
+    header #title-str {
+      font-size: 4vw; }
   .content-block {
-    width: 70%; } }
+    width: 65%; }
+    .content-block .content-title .eng {
+      font-size: 3vw; }
+    .content-block .content-title .jpn {
+      font-size: 1.2vw; }
+    .content-block .content-in .standard {
+      font-size: 1.4vw; }
+    .content-block .content-in .bold {
+      font-size: 1.4vw; }
+  .names {
+    flex-direction: row; }
+    .names .works-list {
+      font-size: 1.5vw; }
+    .names .works-name {
+      flex-direction: row;
+      font-size: 1.3vw; }
+      .names .works-name .row {
+        flex-direction: row; } }
