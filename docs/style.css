@@ -4,13 +4,16 @@ html, body, #container {
   margin: 0;
   padding: 0; }
 
-.title-datetime-90deg {
-  display: inline-block; }
+.d270, .datetime-detail {
+  display: inline; }
 
 #container {
   display: flex;
   flex-direction: column;
   align-items: center; }
+
+.righter {
+  text-align: right; }
 
 header #title-block {
   text-align: center; }
@@ -25,7 +28,25 @@ header #title-block {
     font-weight: bold;
     font-size: 3vw; }
   .content-block .content-title .jpn {
-    font-size: 1.6vw; }
+    font-size: 1.2vw; }
+
+.content-block .content-in .stardard {
+  font-size: 1.4vw; }
+
+.content-block .content-in .bold {
+  font-weight: bold;
+  font-size: 1.4vw; }
+
+.names {
+  display: flex; }
+  .names .works-list {
+    font-weight: bold;
+    font-size: 1.5vw;
+    width: 30%;
+    text-align: center; }
+  .names .works-name {
+    font-size: 1.3vw;
+    width: 70%; }
 
 @media screen and (max-width: 1079px) {
   header {
@@ -35,6 +56,6 @@ header #title-block {
 
 @media screen and (min-width: 1080px) {
   header {
-    width: 80%; }
+    width: 70%; }
   .content-block {
-    width: 80%; } }
+    width: 70%; } }

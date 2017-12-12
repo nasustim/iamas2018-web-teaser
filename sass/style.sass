@@ -6,18 +6,23 @@ html, body, #container
 
 header, article
 
-.title-datetime-90deg
-  display: inline-block
+.d270, .datetime-detail
+  display: inline
 
 #container
   display: flex
   flex-direction: column
   align-items: center
 
+.righter
+  text-align: right
+
 header
 
 
   #title-block
+    //text-align: justify
+    //text-justify: inter-ideograph
     text-align: center
 
     #title-str
@@ -38,9 +43,24 @@ header
       font-weight: bold
       font-size: 3vw
     .jpn
-      font-size: 1.6vw
+      font-size: 1.2vw
   .content-in
+    .stardard
+      font-size: 1.4vw
+    .bold
+      font-weight: bold
+      font-size: 1.4vw
 
+.names
+  display: flex
+  .works-list
+    font-weight: bold
+    font-size: 1.5vw
+    width: 30%
+    text-align: center
+  .works-name
+    font-size: 1.3vw
+    width: 70%
 
 @media screen and (max-width: 1079px)
   header
@@ -49,6 +69,6 @@ header
     width: 98%
 @media screen and (min-width: 1080px)
   header
-    width: 80%
+    width: 70%
   .content-block
-    width: 80%
+    width: 70%
