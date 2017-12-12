@@ -4,6 +4,9 @@ html, body, #container {
   margin: 0;
   padding: 0; }
 
+body {
+  background-color: transparent; }
+
 #container {
   display: flex;
   flex-direction: column;
@@ -14,8 +17,9 @@ html, body, #container {
 
 header #title-block {
   text-align: center; }
-  header #title-block img {
-    width: 100%; }
+
+img {
+  width: 100%; }
 
 .content-block .content-title {
   text-align: center; }
@@ -27,24 +31,36 @@ header #title-block {
 .content-block .content-in .bold {
   font-weight: bold; }
 
-.names {
+#g-map {
+  margin: 10px auto;
+  padding: 10px;
+  width: 250px;
+  border: solid;
+  border-width: 1px; }
+
+.names .content-in {
   display: flex; }
-  .names .works-list {
+  .names .content-in .works-list {
     font-weight: bold;
     width: 30%;
     text-align: center; }
-  .names .works-name {
+  .names .content-in .works-name {
     width: 70%;
     display: flex; }
-    .names .works-name .row {
+    .names .content-in .works-name .row {
       display: flex; }
+
+.center {
+  text-align: center; }
 
 @media screen and (max-width: 1079px) {
   header {
+    margin: 30vw auto auto auto;
     width: 95%; }
     header #title-str {
       font-size: 9vw; }
   .content-block {
+    margin: 20vw auto;
     width: 95%; }
     .content-block .content-title .eng {
       font-size: 6vw; }
@@ -54,22 +70,25 @@ header #title-block {
       font-size: 3.8vw; }
     .content-block .content-in .bold {
       font-size: 3.8vw; }
-  .names {
+  .names .content-in {
+    justify-content: center;
     flex-direction: column; }
-    .names .works-list {
+    .names .content-in .works-list {
       font-size: 3.8vw; }
-    .names .works-name {
-      flex-direction: row;
+    .names .content-in .works-name {
+      flex-direction: column;
       font-size: 3.8vw; }
-      .names .works-name .row {
-        flex-direction: column; } }
+      .names .content-in .works-name .row {
+        flex-direction: row; } }
 
 @media screen and (min-width: 1080px) {
   header {
+    margin: 15vw auto auto auto;
     width: 65%; }
     header #title-str {
       font-size: 4vw; }
   .content-block {
+    margin: 10vw auto;
     width: 65%; }
     .content-block .content-title .eng {
       font-size: 3vw; }
@@ -79,12 +98,12 @@ header #title-block {
       font-size: 1.4vw; }
     .content-block .content-in .bold {
       font-size: 1.4vw; }
-  .names {
+  .names .content-in {
     flex-direction: row; }
-    .names .works-list {
+    .names .content-in .works-list {
       font-size: 1.5vw; }
-    .names .works-name {
+    .names .content-in .works-name {
       flex-direction: row;
       font-size: 1.3vw; }
-      .names .works-name .row {
-        flex-direction: row; } }
+      .names .content-in .works-name .row {
+        flex-direction: column; } }

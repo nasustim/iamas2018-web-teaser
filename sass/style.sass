@@ -4,6 +4,8 @@ html, body, #container
   margin: 0
   padding: 0
 
+body
+  background-color: rgba(0,0,0,0)
 
 #container
   display: flex
@@ -18,8 +20,10 @@ header
 
   #title-block
     text-align: center
-    img
-      width: 100%
+
+
+img
+  width: 100%
 
 
 .content-block
@@ -38,25 +42,39 @@ header
     .bold
       font-weight: bold
 
-.names
-  display: flex
-  .works-list
-    font-weight: bold
-    width: 30%
-    text-align: center
-  .works-name
-    width: 70%
-    display: flex
-    .row
-      display: flex
+#g-map
+  margin: 10px auto
+  padding: 10px
+  width: 250px
+  border: solid
+  border-width: 1px
 
+.names
+  .content-in
+    display: flex
+    .works-list
+      font-weight: bold
+      width: 30%
+      text-align: center
+    .works-name
+      width: 70%
+      display: flex
+      .row
+        display: flex
+
+.center
+  text-align: center
 
 @media screen and (max-width: 1079px)
   header
+
+    margin: 30vw auto auto auto
+
     width: 95%
     #title-str
       font-size: 9vw
   .content-block
+    margin: 20vw auto
     width: 95%
     .content-title
       .eng
@@ -69,20 +87,27 @@ header
       .bold
         font-size: 3.8vw
   .names
-    flex-direction: column
-    .works-list
-      font-size: 3.8vw
-    .works-name
-      flex-direction: row
-      font-size: 3.8vw
-      .row
+    .content-in
+      justify-content: center
+      //align-items: center
+      flex-direction: column
+      .works-list
+        font-size: 3.8vw
+      .works-name
         flex-direction: column
+        font-size: 3.8vw
+        .row
+          flex-direction: row
 @media screen and (min-width: 1080px)
   header
+
+    margin: 15vw auto auto auto
+
     width: 65%
     #title-str
       font-size: 4vw
   .content-block
+    margin: 10vw auto
     width: 65%
     .content-title
       .eng
@@ -95,11 +120,12 @@ header
       .bold
         font-size: 1.4vw
   .names
-    flex-direction: row
-    .works-list
-      font-size: 1.5vw
-    .works-name
+    .content-in
       flex-direction: row
-      font-size: 1.3vw
-      .row
+      .works-list
+        font-size: 1.5vw
+      .works-name
         flex-direction: row
+        font-size: 1.3vw
+        .row
+          flex-direction: column
