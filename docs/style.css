@@ -12,9 +12,9 @@ html, body, #container {
   flex-direction: column;
   align-items: center; }
 
-#title-block {
+header #title-block {
   height: 100%; }
-  #title-block #title-str {
+  header #title-block #title-str {
     font-size: 4vw; }
 
 .content-block {
