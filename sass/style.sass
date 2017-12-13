@@ -14,6 +14,10 @@ body
 
   background-color: rgba(100,100,100,0)
 
+  background-repeat: no-repeat
+  background-attachment: fixed
+  background-size: 100% 100%
+
 
   font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Segoe UI, Hiragino Kaku Gothic ProN, Yu Gothic, sans-serif
 
@@ -87,9 +91,6 @@ img
       text-align: center
     .works-name
       width: 70%
-      display: flex
-      .row
-        display: flex
 
 .center
   text-align: center
@@ -123,10 +124,7 @@ img
       .works-list
         font-size: 3.8vw
       .works-name
-        flex-direction: column
         font-size: 3.8vw
-        .row
-          flex-direction: row
 @media screen and (min-width: 1080px)
   header
 
@@ -154,7 +152,4 @@ img
       .works-list
         font-size: 1.5vw
       .works-name
-        flex-direction: row
         font-size: 1.3vw
-        .row
-          flex-direction: column

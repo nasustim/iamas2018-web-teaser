@@ -12,6 +12,9 @@ html {
 
 body {
   background-color: rgba(100, 100, 100, 0);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
   font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Segoe UI, Hiragino Kaku Gothic ProN, Yu Gothic, sans-serif; }
 
 #container {
@@ -67,10 +70,7 @@ img {
     width: 30%;
     text-align: center; }
   .names .content-in .works-name {
-    width: 70%;
-    display: flex; }
-    .names .content-in .works-name .row {
-      display: flex; }
+    width: 70%; }
 
 .center {
   text-align: center; }
@@ -98,10 +98,7 @@ img {
     .names .content-in .works-list {
       font-size: 3.8vw; }
     .names .content-in .works-name {
-      flex-direction: column;
-      font-size: 3.8vw; }
-      .names .content-in .works-name .row {
-        flex-direction: row; } }
+      font-size: 3.8vw; } }
 
 @media screen and (min-width: 1080px) {
   header {
@@ -125,7 +122,4 @@ img {
     .names .content-in .works-list {
       font-size: 1.5vw; }
     .names .content-in .works-name {
-      flex-direction: row;
-      font-size: 1.3vw; }
-      .names .content-in .works-name .row {
-        flex-direction: column; } }
+      font-size: 1.3vw; } }
