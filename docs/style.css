@@ -1,4 +1,4 @@
-html, body, #container {
+html, body {
   width: 100%;
   height: 100%;
   margin: 0;
@@ -11,13 +11,16 @@ html {
   background-size: 100% auto; }
 
 body {
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Segoe UI, Hiragino Kaku Gothic ProN, Yu Gothic, sans-serif; }
+
+#container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
   background-color: rgba(100, 100, 100, 0);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
-  font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Segoe UI, Hiragino Kaku Gothic ProN, Yu Gothic, sans-serif; }
-
-#container {
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -93,7 +96,7 @@ img {
     .content-block .content-in .bold {
       font-size: 3.8vw; }
   .names .content-in {
-    justify-content: center;
+    margin: 0 auto;
     flex-direction: column; }
     .names .content-in .works-list {
       font-size: 3.8vw; }
