@@ -4,8 +4,11 @@ html, body, #container {
   margin: 0;
   padding: 0; }
 
+html {
+  background-image: url("res/bg.png"); }
+
 body {
-  background-color: transparent;
+  background-color: rgba(100, 100, 100, 0);
   font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Segoe UI, Hiragino Kaku Gothic ProN, Yu Gothic, sans-serif; }
 
 #container {
