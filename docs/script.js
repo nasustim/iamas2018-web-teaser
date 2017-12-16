@@ -9,6 +9,6 @@
 $(window).scroll(function () {
     var per = $(this).scrollTop() / $(document).innerHeight();
     $("#container").css({
-        "background-color": "rgba(100,100,100," + per + ")"
+        "background-color": "rgba(255,255,255," + per + ")"
     });
 });
