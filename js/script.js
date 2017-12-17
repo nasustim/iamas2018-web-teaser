@@ -1,6 +1,5 @@
 (()=>{
 
-    console.log($(window).height());
 
     $("#container").css({
         "height": $(window).height + "px"
