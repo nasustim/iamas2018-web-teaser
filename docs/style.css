@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'cgb';
+  src: url("font/CenturyGothicStd-Bold.otf"); }
+
 html, body {
   width: 100%;
   height: 100%;
@@ -9,6 +13,10 @@ html {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% auto; }
+
+#title-a {
+  font-family: cgb;
+  font-size: 20em; }
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Segoe UI, Hiragino Kaku Gothic ProN, Yu Gothic, sans-serif; }
