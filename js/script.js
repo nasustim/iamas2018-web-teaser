@@ -1,6 +1,12 @@
 (()=>{
+
+    console.log($(window).height());
+
     $("#container").css({
-        height: $(window).height
+        "height": $(window).height + "px"
+    });
+    $("#header").css({
+        "margin": `${$(window).height() - $("#title-block").height() - 20}px auto 20px auto`
     });
 })();
 

@@ -86,10 +86,7 @@ img {
 
 @media screen and (max-width: 1079px) {
   header {
-    margin: 30vw auto auto auto;
     width: 95%; }
-    header #title-str {
-      font-size: 9vw; }
   .content-block {
     margin: 20vw auto;
     width: 95%; }
@@ -111,10 +108,7 @@ img {
 
 @media screen and (min-width: 1080px) {
   header {
-    margin: 15vw auto auto auto;
     width: 65%; }
-    header #title-str {
-      font-size: 4vw; }
   .content-block {
     margin: 10vw auto;
     width: 65%; }
