@@ -43,8 +43,10 @@ a:hover, #g-map:hover {
 a {
   color: #000000; }
 
-header #title-block {
-  text-align: center; }
+header {
+  height: 100%; }
+  header #title-block {
+    text-align: center; }
 
 img {
   width: 100%; }
