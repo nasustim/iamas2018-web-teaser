@@ -8,13 +8,11 @@ html, body {
   margin: 0;
   padding: 0; }
 
-html {
+body {
   background-image: url("res/bg.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100% auto; }
-
-body {
+  background-size: 100% auto;
   font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Segoe UI, Hiragino Kaku Gothic ProN, Yu Gothic, sans-serif; }
 
 #container {
