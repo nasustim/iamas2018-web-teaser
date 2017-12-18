@@ -1,7 +1,7 @@
 import $ from 'jquery';
 import fadeInElements from './_fadeInElements';
 
-(() => {
+$(() => {
 
 
   $("#container").css({
@@ -28,4 +28,4 @@ import fadeInElements from './_fadeInElements';
     });
   });
 
-})();
+});

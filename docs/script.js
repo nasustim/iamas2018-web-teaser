@@ -52,7 +52,7 @@ var _fadeInElements2 = _interopRequireDefault(_fadeInElements);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-(function () {
+(0, _jquery2.default)(function () {
 
   (0, _jquery2.default)("#container").css({
     "height": (0, _jquery2.default)(window).height + "px"
@@ -77,7 +77,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       "background-color": 'rgba(255,255,255,' + per + ')'
     });
   });
-})();
+});
 
 },{"./_fadeInElements":1,"jquery":4}],3:[function(require,module,exports){
 (function (global){
