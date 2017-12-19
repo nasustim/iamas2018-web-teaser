@@ -26,6 +26,7 @@ body
   background-size: 100% auto
   color: #364d4d
 
+
   font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Segoe UI, Hiragino Kaku Gothic ProN, Yu Gothic, sans-serif
 
 
@@ -36,7 +37,7 @@ body
   margin: 0
   padding: 0
 
-  background-color: rgba(100,100,100,0)
+  background-color: rgba(255,255,255,0)
 
   background-repeat: no-repeat
   background-attachment: fixed
@@ -63,11 +64,9 @@ a:hover, #g-map:hover
   font-size: 30px
 
 a
-  color: #000000
+  color: #364d4d
 
 header
-
-  height: 100%
 
   #title-block
     text-align: center
@@ -78,9 +77,11 @@ header
 img
   width: 100%
 
-svg
-  fill: #004040
-
+#bg
+  background: -moz-linear-gradient(-45deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)
+  background: -webkit-linear-gradient(-45deg, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%)
+  background: linear-gradient(135deg, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%)
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ) copy
 
 .content-block
 
@@ -93,12 +94,14 @@ svg
       font-weight: bold
     .jpn
   .content-in
+    margin: 60px 0 0
+    line-height: 2
     .stardand
     .bold
       font-weight: bold
 
 #g-map
-  margin: 10px auto
+  margin: 70px auto
   padding: 10px
   width: 250px
   border: solid
@@ -133,6 +136,7 @@ svg
       .jpn
         font-size: 2.4vw
     .content-in
+      margin: 20px 0 0
       .standard
         font-size: 3.8vw
       .bold
@@ -178,3 +182,18 @@ svg
 .is-show-animation
   opacity: 0
   transform: translate3d(0,60px,0)
+
+.fa-angle-down
+  position: absolute
+  animation: scroll 1200ms ease infinite normal
+  display: block
+  left: 50%
+  transform: translateX(-50%)
+
+@keyframes scroll
+  0%
+    bottom: 20px
+    opacity: 1
+  100%
+    bottom: 0
+    opacity: 0

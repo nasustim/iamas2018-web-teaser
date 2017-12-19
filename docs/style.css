@@ -20,7 +20,7 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  background-color: rgba(100, 100, 100, 0);
+  background-color: rgba(255, 255, 255, 0);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
@@ -44,20 +44,21 @@ a:hover, #g-map:hover {
   font-size: 30px; }
 
 a {
-  color: #000000; }
+  color: #364d4d; }
 
-header {
-  height: 100%; }
-  header #title-block {
-    text-align: center; }
-    header #title-block img {
-      fill: #004040; }
+header #title-block {
+  text-align: center; }
+  header #title-block img {
+    fill: #004040; }
 
 img {
   width: 100%; }
 
-svg {
-  fill: #004040; }
+#bg {
+  background: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0) 0%, white 100%);
+  background: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0) 0%, white 100%);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0) 0%, white 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ) copy; }
 
 .content-block .content-title {
   text-align: center; }
@@ -65,11 +66,14 @@ svg {
     color: #364d4d;
     font-weight: bold; }
 
-.content-block .content-in .bold {
-  font-weight: bold; }
+.content-block .content-in {
+  margin: 60px 0 0;
+  line-height: 2; }
+  .content-block .content-in .bold {
+    font-weight: bold; }
 
 #g-map {
-  margin: 10px auto;
+  margin: 70px auto;
   padding: 10px;
   width: 250px;
   border: solid;
@@ -97,10 +101,12 @@ svg {
       font-size: 6vw; }
     .content-block .content-title .jpn {
       font-size: 2.4vw; }
-    .content-block .content-in .standard {
-      font-size: 3.8vw; }
-    .content-block .content-in .bold {
-      font-size: 3.8vw; }
+    .content-block .content-in {
+      margin: 20px 0 0; }
+      .content-block .content-in .standard {
+        font-size: 3.8vw; }
+      .content-block .content-in .bold {
+        font-size: 3.8vw; }
   .names .content-in {
     margin: 0 auto;
     flex-direction: row; }
@@ -133,3 +139,18 @@ svg {
 .is-show-animation {
   opacity: 0;
   transform: translate3d(0, 60px, 0); }
+
+.fa-angle-down {
+  position: absolute;
+  animation: scroll 1200ms ease infinite normal;
+  display: block;
+  left: 50%;
+  transform: translateX(-50%); }
+
+@keyframes scroll {
+  0% {
+    bottom: 20px;
+    opacity: 1; }
+  100% {
+    bottom: 0;
+    opacity: 0; } }

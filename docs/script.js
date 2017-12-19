@@ -54,9 +54,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 (0, _jquery2.default)(function () {
 
-  (0, _jquery2.default)("#container").css({
-    "height": (0, _jquery2.default)(window).height + "px"
-  });
   (0, _jquery2.default)("#header").css({
     "margin": (0, _jquery2.default)(window).height() - (0, _jquery2.default)("#title-block").height() - 20 + 'px auto 20px auto'
   });
@@ -72,9 +69,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
   (0, _fadeInElements2.default)('.js-fadein');
 
   (0, _jquery2.default)(window).on('scroll', function () {
+    console.log('hoge');
     var per = (0, _jquery2.default)(undefined).scrollTop() / (0, _jquery2.default)(document).innerHeight();
-    (0, _jquery2.default)("#container").css({
-      "background-color": 'rgba(255,255,255,' + per + ')'
+    (0, _jquery2.default)(".bgc").css({
+      backgroundColor: 'rgba(255,255,255,' + per + ')'
     });
   });
 });
