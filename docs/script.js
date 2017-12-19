@@ -67,14 +67,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
   });
 
   (0, _fadeInElements2.default)('.js-fadein');
-
-  (0, _jquery2.default)(window).on('scroll', function () {
-    console.log('hoge');
-    var per = (0, _jquery2.default)(undefined).scrollTop() / (0, _jquery2.default)(document).innerHeight();
-    (0, _jquery2.default)(".bgc").css({
-      backgroundColor: 'rgba(255,255,255,' + per + ')'
-    });
-  });
 });
 
 },{"./_fadeInElements":1,"jquery":4}],3:[function(require,module,exports){

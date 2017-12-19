@@ -17,12 +17,4 @@ $(() => {
 
   fadeInElements('.js-fadein');
 
-  $(window).on('scroll', ()=> {
-    console.log('hoge')
-    let per = $(this).scrollTop() / $(document).innerHeight();
-    $(".bgc").css({
-      backgroundColor: 'rgba(255,255,255,'+ per +')'
-    });
-  });
-
 });
